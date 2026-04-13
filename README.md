@@ -15,6 +15,7 @@ If you already know which workflow you want, open the matching tutorial from the
 | Workflow | What it does | Tutorial | Status |
 | --- | --- | --- | --- |
 | Shopify MCP Server | Connects an MCP client to Shopify so you can work with products, orders, customers, collections, inventory, and fulfillments using natural language | [Open tutorial](docs/workflows/shopify-mcp/README.md) | Ready |
+| Etsy MCP Server | Connects an MCP client to Etsy so you can authorize against the Etsy Open API and work with shop details, listings, receipts, payments, and sections using natural language | [Open tutorial](docs/workflows/etsy-mcp/README.md) | MVP |
 
 ## How This Repository Is Organized
 
@@ -27,10 +28,15 @@ ecom-workflows/
     workflows/
       shopify-mcp/
         README.md
+      etsy-mcp/
+        README.md
   server.py
+  etsy_server.py
   requirements.txt
   Dockerfile
+  Dockerfile.etsy
   env.example
+  env.etsy.example
 ```
 
 The homepage stays short and easy to scan.
